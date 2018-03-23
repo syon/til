@@ -16,9 +16,9 @@
 title: syon/til
 email:
 description: >- # this means to ignore newlines until "baseurl:"
-  Today I Learned by syon.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://syon.github.io/til" # the base hostname & protocol for your site, e.g. http://example.com
+  Today I Learned.
+baseurl: "/til" # the subpath of your site, e.g. /blog
+url: "https://syon.github.io/til/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: syonxv
 github_username:  syon
 
