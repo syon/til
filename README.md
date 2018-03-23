@@ -1,12 +1,4 @@
 Today I Learned
 ===============
 
-## tech stacks
-
-- https://github.com/envygeeks/jekyll-docker
-
-## run
-
-```bash
-$ docker-compose up
-```
+- [syon/til at gh-pages](https://github.com/syon/til/tree/gh-pages)
