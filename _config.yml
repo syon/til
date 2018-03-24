@@ -1,10 +1,10 @@
-title: Stack Problems
-description: My Personal Stack Problems
-author: Agus Makmun
-github: https://github.com/agusmakmun
-about: I am freelance developer. Currently doing more in backend, focused in Python and Django.
-disqus_shortname: stackproblems
-google_analytics: UA-XXXXXXXX-Y
+title: syon/til
+description: Today I Learned
+author: syon
+github: https://github.com/syon
+about: A fashion developer. Interested in life engineering.
+disqus_shortname:
+google_analytics: UA-37634759-2
 avatar_url: /static/img/avatar.jpg
 
 enableTags: true
@@ -19,28 +19,27 @@ social:
     - icon: fa-facebook
       link: "#"
     - icon: fa-twitter
-      link: "https://twitter.com/agusmakmun6"
+      link: "https://twitter.com/syonxv"
     - icon: fa-linkedin
-      link: "https://www.linkedin.com/in/summonagus"
+      link: "#"
     - icon: fa-stack-exchange
       link: "#"
     - icon: fa-github
-      link: "https://github.com/agusmakmun"
+      link: "https://github.com/syon"
 
 share:
-  twitter_username: agusmakmun6
-  fb_appid: 1749788565247320
+  twitter_username: syonxv
+  fb_appid:
 
 urls:
-    - text: About Me
-      url: /about/
     - text: My Projects
       url: /projects/
     - text: XML Feed
       url: /feed.xml
 
-url: "https://agusmakmun.github.io"
-baseurl: ""
+url: "https://syon.github.io"
+baseurl: "/til"
+permalink: /:year/:month/:day/:title/
 paginate: 20
 per_page: 20
 paginate_path: "/page/:num/"
@@ -53,3 +52,13 @@ compress_html:
   clippings: all
   comments: ["<!-- ", " -->"]
   endings: all
+
+timezone: Asia/Tokyo
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENCE
+  - docker-compose.yml
+  - vendor
