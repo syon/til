@@ -30,13 +30,13 @@ categories: [Git]
 git format-patch abcd123 -o ~/downloads/patches
 ```
 
+- [Git - git-format-patch Documentation](https://git-scm.com/docs/git-format-patch)
+
 コミットごとのパッチファイルが生成される。
 
 - 0001-message-of-commit.patch
 - 0002-message-of-commit.patch
 - 0003-message-of-commit.patch
-
-[Git - git-format-patch Documentation](https://git-scm.com/docs/git-format-patch)
 
 ### パッチを適用する
 
@@ -46,7 +46,7 @@ git format-patch abcd123 -o ~/downloads/patches
 git am --3way ~/downloads/patches/*.patch
 ```
 
-[Git - git-am Documentation](https://git-scm.com/docs/git-am)
+- [Git - git-am Documentation](https://git-scm.com/docs/git-am)
 
 #### 絵文字コミットコメントがうまくいかない
 
@@ -77,8 +77,3 @@ git rebase -i abcd456
 
 この後、１コミットずつコメント編集画面に切り替わりながら変更作業を繰り返す。
 最後まで編集し終わるとリベースが完了する。
-
-
-## 参考記事
-
-- [gitで共有リポジトリを作るときに気をつけたいこと - yashiganiの英傑になるまで死ねない日記](https://yashigani.hatenablog.com/entry/2013/03/21/224251)
