@@ -11,3 +11,5 @@ Today I Learned
 ```bash
 $ docker-compose up
 ```
+
+ - http://localhost:4000/til/
