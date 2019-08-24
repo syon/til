@@ -37,7 +37,7 @@ urls:
     - text: XML Feed
       url: /feed.xml
 
-url: "https://syon.github.io"
+url: "https://syon.github.io/til"
 baseurl: "/til"
 permalink: /:year/:month/:day/:title/
 paginate: 20
