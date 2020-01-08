@@ -25,7 +25,7 @@ ZEIT NowにデプロイしたアプリをGoogle Domainsで契約しているド�
 削除しようとすると「証明書は使用中」エラーとなった。
 
 > __証明書は使用中__  
-> 証明書は sub.yourdomain.com (xxxxx) 使用中で（他の AWS リソースに関連付けられていて）削除することはできません。リスト内の各リソースからその証明書との関連付けを解除し、もう一度お試しください。
+> 証明書は sub.yourdomain.app (xxxxx) 使用中で（他の AWS リソースに関連付けられていて）削除することはできません。リスト内の各リソースからその証明書との関連付けを解除し、もう一度お試しください。
 
 同じドメイン名の証明書を作成することはできるため、削除せず新しく証明書のリクエストを実行した。
 API Gatewayのカスタムドメイン名から該当のものを削除することで対応した。もしかしたら削除する必要ないかも。
@@ -40,7 +40,7 @@ CAAレコードの状況は`now dns ls`で確認できる。[^1]
 以下のコマンドでもともとあるCAAレコードが上書きされ、AWSを許可できる。[^2]
 
 ```bash
-$ now dns add yourdomain.com @ CAA '0 issue "amazon.com"'
+$ now dns add yourdomain.app @ CAA '0 issue "amazon.com"'
 ```
 
 反映は24時間〜48時間以内とあるが、すぐに有効となった。
@@ -53,7 +53,7 @@ ACM証明書「初期化しています…」となれば成功。この時点�
 割り当てられたターゲットドメイン名をコピーし、以下の通りコマンドを実行してDNSにCNAMEレコードを登録。
 
 ```bash
-$ now dns add yourdomain.com sub CNAME dddddddddddddd.cloudfront.net
+$ now dns add yourdomain.app sub CNAME dddddddddddddd.cloudfront.net
 ```
 
 ACM証明書の初期化が完了したのを確認して完了。
