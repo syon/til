@@ -43,6 +43,10 @@ CAAレコードの状況は`now dns ls`で確認できる。[^1]
 $ now dns add yourdomain.app @ CAA '0 issue "amazon.com"'
 ```
 
+追記：上書きして`letsencrypt.org`の許可を失ったままにしたため、後日ZEITによる証明書の作成に失敗し、アクセス不可になった。
+サブドメインはAWSだが、Webサイトは`yourdomain.app`をNowに紐づけていたため
+改めて`letsencrypt.org`レコードをaddした。
+
 反映は24時間〜48時間以内とあるが、すぐに有効となった。
 改めて証明書のリクエストを行った。作成後すぐは更新資格が使用不可ステータスとなるが、問題ない。
 
